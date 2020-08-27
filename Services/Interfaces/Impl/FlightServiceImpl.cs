@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Security.Authentication;
 using System.Text;
 using System.Threading;
@@ -7,9 +8,10 @@ using DTO;
 using Entities.BusinessEntities;
 using Repositories.Interfaces;
 
+[assembly: InternalsVisibleToAttribute("ServiceTest")]
 namespace Services.Interfaces.Impl
-{
-    class FlightServiceImpl : IFlightService
+{    
+    internal class FlightServiceImpl : IFlightService
     {
         private IFlightRepository flightRepository;
         public FlightServiceImpl(IFlightRepository flight)
