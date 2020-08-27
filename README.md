@@ -45,4 +45,4 @@
     - Query sepcified flight information
     - update flight information && check the permission during update
     - fully implement the flight data model and entity
-    
+    - basic data operation
