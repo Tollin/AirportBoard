@@ -1,5 +1,14 @@
 # **Airport Board**
 
+## **Assumption**
++ **Newwork environment**
+    + We have two environments with two clusters of web servers. one is connecting to internet another one can only be accessed within intranet
+    + each web site is deployed on a cluster of servers and people access it through NLB (Network Load Balance)
+    + two of these cluster web servers could access the same database
+
++ **App**
+    + Users subscribe the flight information through our App. 
+
 ## **Frameworks**
 + **backend**: 
     + Asp.net core web api + signalR + Entity framework
@@ -30,3 +39,10 @@
 
 
 
+
+## **Implementation && Not Implemented**
++ **Implementation**
+    - Query sepcified flight information
+    - update flight information && check the permission during update
+    - fully implement the flight data model and entity
+    
